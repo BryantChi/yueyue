@@ -1,0 +1,318 @@
+:root {
+  --banner-ratio-720: calc(100vw * (720 / 720)); /* 預設比例 */
+  --banner-ratio-1024: calc(100vw * (720 / 1024));
+  --banner-ratio-1440: calc(100vw * (624 / 1440));
+  --banner-ratio-1280: calc(100vw * (624 / 1280));
+  --banner-ratio-1920: calc(100vw * (624 / 1920));
+
+  --ab-bg-1024: calc(100vw * (512 / 1024));
+  --ab-bg-1440: calc(100vw * (1080 / 1440));
+  --ab-bg-1280: calc(100vw * (720 / 1280));
+  --ab-bg-1920: calc(100vw * (1080 / 1920));
+  --ab-bg-1080: calc(100vw * (1920 / 1080));
+  --ab-bg-750: calc(100vw * (1334 / 750));
+
+  /* --pro-bg-1024: calc(100vw * (720 / 1024));
+      --pro-bg-1440: calc(100vw * (1200 / 1440));
+      --pro-bg-1280: calc(100vw * (1080 / 1280));
+      --pro-bg-1920: calc(100vw * (1200 / 1920)); */
+}
+
+html, body {
+  scroll-behavior: smooth;
+  background: linear-gradient(to right, #f2e5da, #e5c9b5);
+}
+
+p {
+  color: #71706e;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+
+.nav-dropdown {
+  border-top: 5px solid #f8e5ce !important;
+  background: white !important;
+}
+
+@media (max-width: 992px) {
+  .nav-dropdown {
+    width: max-content !important;
+    border-left: unset;
+    border-right: unset;
+    border-bottom: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-dropdown {
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+}
+
+.dropdown-item:not(:last-child)::after {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  text-align: center;
+  content: "";
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: #c9a15acc;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #c9a15acc;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #36322f !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  margin-right: 23px;
+}
+
+.navbar .navbar-nav .nav-link {
+  font-size: 18px;
+}
+
+.dropdown-item {
+  /* color: #c9a15a !important; */
+  color: #71706e !important;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#hero {
+  min-height: auto !important;
+}
+
+#hero .item1,
+#hero .item2,
+#hero .item3 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vw * (315 / 851));
+  /* width: 100vw; */
+}
+
+#hero .item1 {
+  background-image: url(../images/Banner/1.png);
+}
+#hero .item2 {
+  background-image: url(../images/Banner/2.png);
+}
+/* #hero .item3 {
+  background-image: url(../images/00-hp/banner03_624.jpg);
+} */
+
+/* @media (max-width: 768px) {
+  #hero .item1,
+  #hero .item2,
+  #hero .item3 {
+    height: var(--banner-ratio-720);
+    
+  }
+} */
+/* height: 100vw; 以正方形顯示 */
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  #hero .item1,
+  #hero .item2,
+  #hero .item3 {
+    height: var(--banner-ratio-1024);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  #hero .item1,
+  #hero .item2,
+  #hero .item3 {
+    height: var(--banner-ratio-1280);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #hero .item1,
+  #hero .item2,
+  #hero .item3 {
+    height: var(--banner-ratio-1440);
+  }
+}
+
+@media (min-width: 1440px) {
+  #hero .item1,
+  #hero .item2,
+  #hero .item3 {
+    height: var(--banner-ratio-1920);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #hero .item1 {
+    background-image: url(../images/00-hp/banner01_1024.jpg);
+  }
+  #hero .item2 {
+    background-image: url(../images/00-hp/banner02_1024.jpg);
+  }
+  /* #hero .item3 {
+    background-image: url(../images/00-hp/banner03_1024.jpg);
+  } */
+/* } */
+
+/* @media (min-width: 1024px) and (max-width: 1280px) {
+  #hero .item1 {
+    background-image: url(../images/00-hp/banner01_1280.jpg);
+  }
+  #hero .item2 {
+    background-image: url(../images/00-hp/banner02_1280.jpg);
+  }
+  #hero .item3 {
+    background-image: url(../images/00-hp/banner03_1280.jpg);
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  #hero .item1 {
+    background-image: url(../images/00-hp/banner01_1440.jpg);
+  }
+  #hero .item2 {
+    background-image: url(../images/00-hp/banner02_1440.jpg);
+  }
+  #hero .item3 {
+    background-image: url(../images/00-hp/banner03_1440.jpg);
+  }
+}
+
+@media (min-width: 1440px) {
+  #hero .item1 {
+    background-image: url(../images/00-hp/banner01_1920.jpg);
+  }
+  #hero .item2 {
+    background-image: url(../images/00-hp/banner02_1920.jpg);
+  }
+  #hero .item3 {
+    background-image: url(../images/00-hp/banner03_1920.jpg);
+  }
+} */
+
+
+.site-navbar {
+    background-color: #995a3b !important;
+    position: fixed !important;
+}
+
+@media (max-width: 768px) {
+    .site-navbar {
+        padding: unset !important;
+    }
+}
+
+.text-995a3b {
+    color: #995a3b !important;
+}
+
+.text-e69138 {
+    color: #e69138 !important;
+}
+
+.about-img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bg-f2-e5 {
+    background: linear-gradient(to right, #f2e5da, #e5c9b5);
+}
+
+.faq-item-box {
+    background-color: #fff;
+    padding: 20px 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item-a {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-item-box {
+      padding: 20px 1rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .faq-contact-box img {
+      position: relative;
+      transform: unset;
+    }
+  }
+  
+  .faq-item-arrow-d .bi::before {
+    color: black;
+    font-weight: 800 !important;
+  }
+  
+  .faq-item-arrow-p .bi::before {
+    color: black;
+    font-weight: 800 !important;
+  }
+  
+  .faq-item-line {
+    background: #cc914b;
+    height: 1px;
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .footer {
+    background-color: #995a3b !important;
+  }
+
+  .copyright {
+    /* background: #7c7c7e !important; */
+    font-size: 14px;
+  }
+  
+  /* @media (max-width: 768px) {
+    .copyright {
+      margin-bottom: 40px;
+    }
+  } */
+  
+  .copyright p {
+    color: #f2e5da !important;
+  }
+  
+  .copyright a {
+    color: #f2e5da !important;
+  }
+
+  /* 桌機版：模擬 table header 與每一列的格式 */
+  .table-header {
+    font-weight: bold;
+    border-bottom: 2px solid #dee2e6;
+    padding: 8px 0;
+  }
+  .table-row {
+    border-bottom: 1px solid #dee2e6;
+    padding: 8px 0;
+  }
+
+  /* 手機版：利用 data-label 屬性加上提示標籤 */
+  @media (max-width: 767.98px) {
+    .d-table-cell[data-label]:before {
+      content: attr(data-label) ": ";
+      font-weight: bold;
+      /* 可根據需求調整提示區塊的寬度 */
+      width: 100px;
+      display: inline-block;
+    }
+  }
