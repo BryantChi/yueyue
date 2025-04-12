@@ -5,23 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {{-- <meta name="description"
-        content="玥玥越式養生洗髮位於台南市中心，鄰近新光三越台南西門新天地、藍曬圖文創園區和南英商工，是當地人推薦的台南越式洗頭首選！提供90至120分鐘的極致放鬆體驗，讓您徹底享受深層舒壓。專業的越式洗頭、修指甲、臉部護理、臉部按摩、玉石撥筋到全身按摩，每一項服務都能讓您身心放鬆。隨時歡迎預約，感受台南在地正宗的越式洗髮、越式按摩一條龍服務。" />
-    <meta name="keywords" content="台南越式洗髮,台南越式洗頭,台南深夜洗頭,台南頭皮按摩,台南舒壓,台南按摩洗髮,越式洗髮推薦,越式洗頭推薦" />
-    <meta property="og:locale" content="zh_TW" />
-    <meta name="author" content="紀孟勳 Bryantchi.work@gmail.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="玥玥越式養生洗髮｜台南總店・正宗越式洗髮店" />
-    <meta property="og:description"
-        content="玥玥越式養生洗髮位於台南市中心，鄰近新光三越台南西門新天地、藍曬圖文創園區和南英商工，是當地人推薦的台南越式洗頭首選！提供90至120分鐘的極致放鬆體驗，讓您徹底享受深層舒壓。專業的越式洗頭、修指甲、臉部護理、臉部按摩、玉石撥筋到全身按摩，每一項服務都能讓您身心放鬆。隨時歡迎預約，感受台南在地正宗的越式洗髮、越式按摩一條龍服務。" />
-    <meta property="og:image" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:site_name" content="" />
-    <title>玥玥越式養生洗髮｜台南總店・正宗越式洗髮店</title>
-    <meta name="title" content="玥玥越式養生洗髮｜台南總店・正宗越式洗髮店" />
-    <meta name="google-site-verification" content="" />
-    <link rel="canonical" href="" /> --}}
-
     <meta name="description" content="{{ $seoInfo->description ?? '' }}" />
     <meta name="keywords" content="{{ $seoInfo->keywords ?? '' }}" />
     <meta property="og:locale" content="zh_TW" />
