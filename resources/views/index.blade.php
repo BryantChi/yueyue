@@ -3,18 +3,34 @@
 @section('content')
     <div class="container py-5">
 
-        <div class="row mb-52" id="about">
+        <div class="row justify-content-center mb-52" id="about">
             <div class="col-md-12 text-center mb-5">
                 <h2 class="site-section-heading text-center font-secondary text-995a3b"><span class="text-e69138">品牌</span>介紹
                 </h2>
             </div>
 
+            <div class="col-md mb-5 text-center">
+                <img src="{{asset('assets/images/Banner/形象照.jpg')}}" class="img-fluid abs-01-img" alt="">
+            </div>
+            <div class="col-md-auto text-center abs-01 mb-5 align-self-center">
+                <h1>台南中西區越式洗髮</h1>
+                <h2><i class="fas fa-quote-left mr-2"></i><span>「玥玥」</span>越式養生洗髮<i class="fas fa-quote-right ml-2"></i></h2>
+                <h5>玥玥不僅是創辦人的名字，也是對品質服務的承諾與象徵。</h5>
+            </div>
+
+
             <div class="col-md-6">
                 <p class="">
-                    &emsp;&emsp;玥玥不僅是創辦人的名字，也是對品質服務的承諾與象徵。自2020年至2024年，創辦人多次前往越南胡志明市及薄寮，親身體驗正宗的越南一條龍越式洗髮服務，深深被這種全身心放鬆的感覺吸引。他們發現，越式洗髮不僅能讓顧客在一次到位的體驗中享受洗髮、修指甲、按摩等服務，從而能夠讓顧客在短短的時間內達到深度放鬆。
+                    &emsp;&emsp;玥玥越式養生洗髮，不只是一次洗頭，而是一場讓你徹底放鬆的儀式。這是一份來自創辦人的堅持——中年創業，是挑戰，更是選擇。 中年創業轉型是個挑戰，這是一條只能往前走、無法回頭的選擇。既然決定了，就要做到：沒有最好，只有更好！
                 </p>
                 <p>
-                    創辦人本身也非常享受按摩，促使了契機有了開店的想法。
+                    ✔ 正宗越式洗髮設備，水流Spa療癒身心<br>
+                    ✔ 專業手技，每一下按壓都精準到位<br>
+                    ✔ 嚴選產品，溫和養護你的頭皮、臉部及身體<br>
+                    ✔ 細節至上，打造深層的舒壓體驗
+                </p>
+                <p>
+                    玥玥全體的員工，歡迎你們的蒞臨！
                 </p>
             </div>
             <div class="col-md-6">
@@ -39,13 +55,28 @@
                             class="text-e69138">什麼是</span>越式洗髮?
                     </h2>
                 </div>
-                <div class="col-lg-10 mb-4">
+                <div class="col-lg-12 mb-4">
                     <div class="slick">
-                        {{-- <img src="{{asset('assets/images/可用素材圖/輪播圖組/1.jpg')}}" class="img-fluid img-thumbnail" alt=""> --}}
-                        <img src="{{asset('assets/images/可用素材圖/輪播圖組/2.jpg')}}" class="img-fluid img-thumbnail" alt="">
-                        <img src="{{asset('assets/images/可用素材圖/輪播圖組/3.jpg')}}" class="img-fluid img-thumbnail" alt="">
-                        <img src="{{asset('assets/images/可用素材圖/輪播圖組/4.jpg')}}" class="img-fluid img-thumbnail" alt="">
-                        <img src="{{asset('assets/images/可用素材圖/輪播圖組/5.jpg')}}" class="img-fluid img-thumbnail" alt="">
+                        <div class="">
+                            <a href="{{asset('assets/images/可用素材圖/輪播圖組/2.jpg')}}" data-fancybox="_what">
+                                <img src="{{asset('assets/images/可用素材圖/輪播圖組/2.jpg')}}" class="img-fluid px-1" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="{{asset('assets/images/可用素材圖/輪播圖組/3.jpg')}}" data-fancybox="_what">
+                                <img src="{{asset('assets/images/可用素材圖/輪播圖組/3.jpg')}}" class="img-fluid px-1" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="{{asset('assets/images/可用素材圖/輪播圖組/4.jpg')}}" data-fancybox="_what">
+                                <img src="{{asset('assets/images/可用素材圖/輪播圖組/4.jpg')}}" class="img-fluid px-1" alt="">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="{{asset('assets/images/可用素材圖/輪播圖組/5.jpg')}}" data-fancybox="_what">
+                                <img src="{{asset('assets/images/可用素材圖/輪播圖組/5.jpg')}}" class="img-fluid px-1" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -191,6 +222,31 @@
             </div>
             <div class="row justify-content-center mb-5">
 
+                <div class="col-lg-10 mb-3">
+                    <img src="{{asset('assets/images/price.jpg')}}" class="img-fluid mb-3" alt="">
+
+                    <div class="row">
+                        <div class="col-lg-3 col-6 text-center">
+                            <img src="{{asset('assets/images/icon/icon01.png')}}" class="img-fluid w-75" alt="">
+                            <h6>越式洗髮</h6>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center">
+                            <img src="{{asset('assets/images/icon/icon02.png')}}" class="img-fluid w-75" alt="">
+                            <h6>全身按摩</h6>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center">
+                            <img src="{{asset('assets/images/icon/icon03.png')}}" class="img-fluid w-75" alt="">
+                            <h6>美容護膚</h6>
+                        </div>
+                        <div class="col-lg-3 col-6 text-center">
+                            <img src="{{asset('assets/images/icon/icon04.png')}}" class="img-fluid w-75" alt="">
+                            <h6>指甲修剪</h6>
+                        </div>
+                    </div>
+
+                    <hr>
+                </div>
+
                 <div class="col-lg-10">
                     <div class="container my-4">
                         <!-- 大螢幕版：以 row/col 呈現表格式內容 -->
@@ -218,7 +274,7 @@
                                 <div class="col">B套餐</div>
                                 <div class="col text-right">90</div>
                                 <div class="col text-right">1800</div>
-                                <div class="col text-right">指定</div>
+                                <div class="col text-right"><span class="font-weight-bold text-cc914b">指定</span></div>
                                 <div class="col text-center">
                                     臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、採耳、泡腳、指甲修剪
                                 </div>
@@ -226,11 +282,11 @@
                             <!-- C套餐 -->
                             <div class="row border-bottom py-2">
                                 <div class="col">C套餐</div>
-                                <div class="col text-right">100</div>
+                                <div class="col text-right">120</div>
                                 <div class="col text-right">2000</div>
                                 <div class="col text-right">不指定</div>
                                 <div class="col text-center">
-                                    臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、玉石撥筋、採耳、泡腳、指甲修剪
+                                    臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、<span class="font-weight-bold text-995a3b">玉石撥筋</span>、採耳、泡腳、指甲修剪
                                 </div>
                             </div>
                             <!-- D套餐 -->
@@ -238,9 +294,9 @@
                                 <div class="col">D套餐</div>
                                 <div class="col text-right">120</div>
                                 <div class="col text-right">2200</div>
-                                <div class="col text-right">指定</div>
+                                <div class="col text-right"><span class="font-weight-bold text-cc914b">指定</span></div>
                                 <div class="col text-center">
-                                    臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、玉石撥筋、採耳、泡腳、指甲修剪
+                                    臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、<span class="font-weight-bold text-995a3b">玉石撥筋</span>、採耳、泡腳、指甲修剪
                                 </div>
                             </div>
                             <!-- 額外服務 -->
@@ -257,10 +313,10 @@
                         </div>
 
                         <!-- 手機版：以卡片式呈現，資訊一目了然 -->
-                        <div class="d-block d-md-none">
+                        <div class="d-block d-md-none price-mob">
                             <!-- A套餐 -->
-                            <div class="card mb-3">
-                                <div class="card-header">A套餐</div>
+                            <div class="card mb-3 rounded">
+                                <div class="card-header bg-995a3b text-white">A套餐</div>
                                 <div class="card-body">
                                     <p class="mb-1"><strong>時間(分):</strong> 90</p>
                                     <p class="mb-1"><strong>價格:</strong> 1600</p>
@@ -271,44 +327,44 @@
                                 </div>
                             </div>
                             <!-- B套餐 -->
-                            <div class="card mb-3">
-                                <div class="card-header">B套餐</div>
+                            <div class="card mb-3 rounded">
+                                <div class="card-header bg-995a3b text-white">B套餐</div>
                                 <div class="card-body">
                                     <p class="mb-1"><strong>時間(分):</strong> 90</p>
                                     <p class="mb-1"><strong>價格:</strong> 1800</p>
-                                    <p class="mb-1"><strong>指定人員:</strong> 指定</p>
+                                    <p class="mb-1"><strong>指定人員:</strong> <span class="font-weight-bold text-cc914b">指定</span></p>
                                     <p class="mb-0"><strong>服務內容:</strong>
                                         臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、採耳、泡腳、指甲修剪
                                     </p>
                                 </div>
                             </div>
                             <!-- C套餐 -->
-                            <div class="card mb-3">
-                                <div class="card-header">C套餐</div>
+                            <div class="card mb-3 rounded">
+                                <div class="card-header bg-995a3b text-white">C套餐</div>
                                 <div class="card-body">
                                     <p class="mb-1"><strong>時間(分):</strong> 100</p>
                                     <p class="mb-1"><strong>價格:</strong> 2000</p>
                                     <p class="mb-1"><strong>指定人員:</strong> 不指定</p>
                                     <p class="mb-0"><strong>服務內容:</strong>
-                                        臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、玉石撥筋、採耳、泡腳、指甲修剪
+                                        臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、<span class="font-weight-bold text-995a3b">玉石撥筋</span>、採耳、泡腳、指甲修剪
                                     </p>
                                 </div>
                             </div>
                             <!-- D套餐 -->
-                            <div class="card mb-3">
-                                <div class="card-header">D套餐</div>
+                            <div class="card mb-3 rounded">
+                                <div class="card-header bg-995a3b text-white">D套餐</div>
                                 <div class="card-body">
                                     <p class="mb-1"><strong>時間(分):</strong> 120</p>
                                     <p class="mb-1"><strong>價格:</strong> 2200</p>
-                                    <p class="mb-1"><strong>指定人員:</strong> 指定</p>
+                                    <p class="mb-1"><strong>指定人員:</strong> <span class="font-weight-bold text-cc914b">指定</span></p>
                                     <p class="mb-0"><strong>服務內容:</strong>
-                                        臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、玉石撥筋、採耳、泡腳、指甲修剪
+                                        臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、<span class="font-weight-bold text-995a3b">玉石撥筋</span>、採耳、泡腳、指甲修剪
                                     </p>
                                 </div>
                             </div>
                             <!-- 額外服務 -->
-                            <div class="card mb-3">
-                                <div class="card-header">額外服務</div>
+                            <div class="card mb-3 rounded">
+                                <div class="card-header bg-995a3b text-white">額外服務</div>
                                 <div class="card-body">
                                     <p class="mb-0"><strong>服務內容:</strong><br>
                                         A~D吹髮造型 +$200<br>

@@ -145,7 +145,7 @@ $(function () {
     });
     $(".about-slick").slick({
         arrows: false,
-        dots: false,
+        dots: true,
         speed: 300,
         autoplay: true,
         centerPadding: "100px",

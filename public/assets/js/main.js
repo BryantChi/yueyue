@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+
 
 	var siteMenuClone = function() {
 
@@ -19,11 +19,11 @@ jQuery(document).ready(function($) {
 
 
 		setTimeout(function() {
-			
+
 			var counter = 0;
       $('.site-mobile-menu .has-children').each(function(){
         var $this = $(this);
-        
+
         $this.prepend('<span class="arrow-collapse collapsed">');
 
         $this.find('.arrow-collapse').attr({
@@ -49,8 +49,8 @@ jQuery(document).ready(function($) {
       } else {
         $this.addClass('active');
       }
-      e.preventDefault();  
-      
+      e.preventDefault();
+
     });
 
 		$(window).resize(function() {
@@ -75,7 +75,7 @@ jQuery(document).ready(function($) {
 				$('body').addClass('offcanvas-menu');
 				$this.addClass('active');
 			}
-		}) 
+		})
 
 		// click outisde offcanvas
 		$(document).mouseup(function(e) {
@@ -86,7 +86,7 @@ jQuery(document).ready(function($) {
 				}
 	    }
 		});
-	}; 
+	};
 	siteMenuClone();
 
 
@@ -170,21 +170,21 @@ jQuery(document).ready(function($) {
 				navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
 		    responsive:{
 	        600:{
-	        	
+
 	        	nav: true,
 	          items: 1
 	        },
 	        1000:{
-	        	
+
 	        	stagePadding: 0,
 	        	nav: true,
 	          items: 2
 	        },
 	        1200:{
-	        	
+
 	        	stagePadding: 0,
 	        	nav: true,
-	          items: 2
+	          items: 3
 	        }
 		    }
 			});
@@ -227,7 +227,7 @@ jQuery(document).ready(function($) {
 		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
 		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
 		});
-				
+
 	};
 	siteCountDown();
 
@@ -257,7 +257,7 @@ jQuery(document).ready(function($) {
 
 
 	var counter = function() {
-		
+
 		$('.section-counter').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('ftco-animated') ) {
@@ -274,7 +274,7 @@ jQuery(document).ready(function($) {
 					  }, 7000
 					);
 				});
-				
+
 			}
 
 		} , { offset: '95%' } );
@@ -282,6 +282,6 @@ jQuery(document).ready(function($) {
 	}
 	counter();
 
-	
+
 
 });
