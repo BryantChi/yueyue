@@ -35,11 +35,11 @@
             </div>
             <div class="col-md-6">
                 <div class="about-slick">
-                    <img src="{{asset('assets/images/可用素材圖/IMG_0312.jpg')}}" alt="" class="img-fluid about-img mx-1">
-                    <img src="{{asset('assets/images/可用素材圖/IMG_0384.jpg')}}" alt="" class="img-fluid about-img mx-1">
-                    <img src="{{asset('assets/images/可用素材圖/S__34291745_0.jpg')}}" alt="" class="img-fluid about-img mx-1">
-                    <img src="{{asset('assets/images/可用素材圖/S__34291750_0.jpg')}}" alt="" class="img-fluid about-img mx-1">
-                    <img src="{{asset('assets/images/可用素材圖/S__34291755_0.jpg')}}" alt="" class="img-fluid about-img mx-1">
+                    <img src="{{asset('assets/images/可用素材圖/IMG_0312.jpg')}}" alt="" class="img-fluid about-img">
+                    <img src="{{asset('assets/images/可用素材圖/IMG_0384.jpg')}}" alt="" class="img-fluid about-img">
+                    <img src="{{asset('assets/images/可用素材圖/S__34291745_0.jpg')}}" alt="" class="img-fluid about-img">
+                    <img src="{{asset('assets/images/可用素材圖/S__34291750_0.jpg')}}" alt="" class="img-fluid about-img">
+                    <img src="{{asset('assets/images/可用素材圖/S__34291755_0.jpg')}}" alt="" class="img-fluid about-img">
                 </div>
 
             </div>
