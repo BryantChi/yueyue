@@ -21,6 +21,22 @@
     </a>
 </li>
 
+<li class="nav-item">
+    <a href="{{ route('admin.teamInfos.index') }}"
+        class="nav-link {{ Request::is('admin/teamInfos*') ? 'active' : '' }}">
+        <span class="mr-2 brand-image"><i class="fas fa-users"></i></span>
+        <p>團隊資訊</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('admin.activityInfos.index') }}"
+        class="nav-link {{ Request::is('admin/activityInfos*') ? 'active' : '' }}">
+        <span class="mr-2 brand-image"><i class="fas fa-calendar-alt"></i></span>
+        <p>活動訊息</p>
+    </a>
+</li>
+
 {{-- <li class="nav-item">
     <a href="{{ route('admin.marqueeInfos.index') }}"
        class="nav-link {{ Request::is('admin/marqueeInfos*') ? 'active' : '' }}">

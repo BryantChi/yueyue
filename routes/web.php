@@ -53,6 +53,8 @@ Route::post(
 Route::prefix('admin')->group(function () {
     Route::middleware(['auth'])->group(function () {
         Route::resource('seoSettings', App\Http\Controllers\Admin\SeoSettingController::class, ["as" => 'admin']);
+        Route::resource('teamInfos', App\Http\Controllers\Admin\TeamInfoController::class, ["as" => 'admin']);
+        Route::resource('activityInfos', App\Http\Controllers\Admin\ActivityInfoController::class, ["as" => 'admin']);
 
         Route::any('adminUsers', [App\Http\Controllers\Admin\AdminAccountController::class, 'index'])->name('admin.adminUsers.index');
         Route::any('adminUsers/create', [App\Http\Controllers\Admin\AdminAccountController::class, 'create'])->name('admin.adminUsers.create');
@@ -63,3 +65,14 @@ Route::prefix('admin')->group(function () {
         Route::any('adminUsers/destroy/{id}', [App\Http\Controllers\Admin\AdminAccountController::class, 'destroy'])->name('admin.adminUsers.destroy');
     });
 });
+
+// Route::resource('admin/team-infos', App\Http\Controllers\Admin\TeamInfoController::class)
+//     ->names([
+//         'index' => 'admin.teamInfos.index',
+//         'store' => 'admin.teamInfos.store',
+//         'show' => 'admin.teamInfos.show',
+//         'update' => 'admin.teamInfos.update',
+//         'destroy' => 'admin.teamInfos.destroy',
+//         'create' => 'admin.teamInfos.create',
+//         'edit' => 'admin.teamInfos.edit'
+//     ]);

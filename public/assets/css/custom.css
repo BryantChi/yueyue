@@ -372,3 +372,44 @@ p {
       display: inline-block;
     }
   }
+
+  /* social-icon 圓形 */
+    .social-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #995a3b !important;
+        color: #fff;
+    }
+    .social-icon:hover {
+        background-color: #e69138 !important;
+    }
+
+    /* cta-button  長條方圓*/
+    .cta-button {
+        width: 230px;
+        height: 60px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #995a3b !important;
+        color: #fff;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+    .cta-button:hover {
+        background-color: #e69138 !important;
+    }
+    .cta-button a {
+        color: #fff;
+        text-decoration: none;
+    }
+    .cta-button a:hover {
+        color: #fff;
+    }

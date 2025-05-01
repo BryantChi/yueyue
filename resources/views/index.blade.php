@@ -84,8 +84,8 @@
                     <div class="faq-item-box px-3">
                         <div class="faq-item-q d-flex justify-content-between">
                             <h5><span style="color: #e75303;">Q1.</span>越式洗髮跟髮廊洗髮有什麼不同?</h5>
-                            <span class="faq-item-arrow-d"><i class="bi bi-dash-lg"></i></span>
-                            <span class="faq-item-arrow-p d-none"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-p"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-d d-none"><i class="bi bi-dash-lg"></i></span>
                         </div>
                         <div class="faq-item-line"></div>
                         <div class="faq-item-a">
@@ -100,8 +100,8 @@
                     <div class="faq-item-box px-3">
                         <div class="faq-item-q d-flex justify-content-between">
                             <h5><span style="color: #e75303;">Q2.</span>越式洗髮的流程有哪些？</h5>
-                            <span class="faq-item-arrow-d"><i class="bi bi-dash-lg"></i></span>
-                            <span class="faq-item-arrow-p d-none"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-p"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-d d-none"><i class="bi bi-dash-lg"></i></span>
                         </div>
                         <div class="faq-item-line"></div>
                         <div class="faq-item-a">
@@ -116,8 +116,8 @@
                     <div class="faq-item-box px-3">
                         <div class="faq-item-q d-flex justify-content-between">
                             <h5><span style="color: #e75303;">Q3.</span>越式洗髮的費用為?</h5>
-                            <span class="faq-item-arrow-d"><i class="bi bi-dash-lg"></i></span>
-                            <span class="faq-item-arrow-p d-none"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-p"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-d d-none"><i class="bi bi-dash-lg"></i></span>
                         </div>
                         <div class="faq-item-line"></div>
                         <div class="faq-item-a">
@@ -132,8 +132,8 @@
                     <div class="faq-item-box px-3">
                         <div class="faq-item-q d-flex justify-content-between">
                             <h5><span style="color: #e75303;">Q4.</span>玥玥越式養生洗髮的獨特之處?</h5>
-                            <span class="faq-item-arrow-d"><i class="bi bi-dash-lg"></i></span>
-                            <span class="faq-item-arrow-p d-none"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-p"><i class="bi bi-plus-lg"></i></span>
+                            <span class="faq-item-arrow-d d-none"><i class="bi bi-dash-lg"></i></span>
                         </div>
                         <div class="faq-item-line"></div>
                         <div class="faq-item-a">
@@ -162,7 +162,19 @@
 
                     <div class="owl-carousel-2 owl-carousel">
 
-                        <div class="d-block block-testimony mx-auto text-center">
+                        @foreach ($teamsInfo ?? [] as $team)
+                            <div class="d-block block-testimony mx-auto text-center">
+                                <div class="person w-50 mx-auto mb-4">
+                                    <img src="{{ env('APP_URL', 'https://yueyuewash.powerchi.com.tw') . '/uploads/' . $team->image }}" alt="Image" class="img-fluid rounded-circle mx-auto">
+                                </div>
+                                <div>
+                                    <h2 class="h5 mb-4">{{$team->name}}</h2>
+                                    <blockquote>&ldquo;{{$team->intro}}&rdquo;</blockquote>
+                                </div>
+                            </div>
+                        @endforeach
+
+                        {{-- <div class="d-block block-testimony mx-auto text-center">
                             <div class="person w-50 mx-auto mb-4">
                                 <img src="{{asset('assets/images/服務人員/維尼.jpg')}}" alt="Image" class="img-fluid rounded-circle mx-auto">
                             </div>
@@ -200,8 +212,17 @@
                                 <h2 class="h5 mb-4">小乖</h2>
                                 <blockquote>&ldquo;講究細節，專注滿足每位客人的客製化需求。&rdquo;</blockquote>
                             </div>
-                        </div>
+                        </div> --}}
 
+                        <div class="d-block block-testimony mx-auto text-center h-100">
+                            <div class="person w-50 mx-auto mb-4">
+                                <img src="{{asset('assets/images/icon/image.png')}}" alt="Image" class="img-fluid rounded-circle mx-auto">
+                            </div>
+                            <div>
+                                <h2 class="h5 mb-4">敬請期待</h2>
+                                <blockquote>&ldquo;新進人員陸續徵才中&rdquo;</blockquote>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -374,81 +395,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card border-light shadow-sm rounded d-none">
 
-                        <!-- <div class="table-responsive">
-            <table class="table table-borderless card-text text-nowrap">
-              <thead>
-                <tr>
-                  <th scope="col">套餐</th>
-                  <th scope="col" class="text-right">時間(分)</th>
-                  <th scope="col" class="text-right">價格</th>
-                  <th scope="col" class="text-right">指定人員</th>
-                  <th scope="col" class="text-right2 text-center">服務內容</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>A套餐</td>
-                  <td class="text-right">90</td>
-                  <td class="text-right">1600</td>
-                  <td class="text-right">不指定</td>
-                  <td class="text-right2">
-                    <p>
-                      臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、採耳、泡腳、指甲修剪
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>B套餐</td>
-                  <td class="text-right">90</td>
-                  <td class="text-right">1800</td>
-                  <td class="text-right">指定</td>
-                  <td class="text-right2">
-                    <p>
-                      臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、採耳、泡腳、指甲修剪
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>C套餐</td>
-                  <td class="text-right">100</td>
-                  <td class="text-right">2000</td>
-                  <td class="text-right">不指定</td>
-                  <td class="text-right2">
-                    <p>
-                      臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、玉石撥筋、採耳、泡腳、指甲修剪
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>D套餐</td>
-                  <td class="text-right">120</td>
-                  <td class="text-right">2200</td>
-                  <td class="text-right">指定</td>
-                  <td class="text-right2">
-                    <p>
-                      臉部護理（清潔/洗臉/按摩/敷臉/敷眼）、全身按摩、水療SPA洗髮、玉石撥筋、採耳、泡腳、指甲修剪
-                    </p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>額外服務</td>
-                  <td class="text-right"></td>
-                  <td class="text-right"></td>
-                  <td class="text-right"></td>
-                  <td class="text-right2">
-                    <p>
-                      A~D吹髮造型 +$200<br>
-                      特殊洗髮（接髮/假髮）+$300
-                    </p>
-                  </td>
-                </tr>
+                    <div class="row mt-4" id="price2">
+                        <div class="col-md-12 text-center mb-3">
+                            <h4><span class="text-e69138">付款</span>方式</h4>
+                        </div>
+                        <div class="col-md text-center mb-4">
+                            <img src="{{asset('assets/images/icon/money.png')}}" class="img-fluid w-75 rounded-circle bg-white mb-3" alt="">
+                            <h5><strong>現金</strong></h5>
+                        </div>
+                        <div class="col-md text-center mb-4">
+                            <img src="{{asset('assets/images/icon/ctbc.png')}}" class="img-fluid w-75 rounded-circle bg-white mb-3" alt="">
+                            <h5><strong>轉帳(中信)</strong></h5>
+                        </div>
+                        <div class="col-md text-center mb-4">
+                            <img src="{{asset('assets/images/icon/st.png')}}" class="img-fluid w-75 rounded-circle bg-white mb-3" alt="">
+                            <h5><strong>街口</strong></h5>
+                        </div>
+                        <div class="col-md text-center mb-4">
+                            <img src="{{asset('assets/images/icon/linepay.png')}}" class="img-fluid w-75 rounded-circle bg-white mb-3" alt="">
+                            <h5><strong>LinePay</strong></h5>
+                        </div>
+                    </div>
 
-              </tbody>
-            </table>
-          </div> -->
-                        <div>
+
+                    <div class="row mb-52" id="price3">
+                        <div class="col-md-12 text-center mt-3">
                             <p class="text-center">
                                 如需指定技師，預約時請主動告知，以利為您媒合安排。
                             </p>
@@ -470,8 +442,22 @@
                 </div>
             </div>
             <div class="row justify-content-center mb-5">
-
                 <div class="col-lg-10">
+                    @foreach ($activityInfo ?? [] as $key => $activity)
+                        @if ($key % 2 == 0)
+                        <div
+                        style="background: #fff3e6; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                            {!! $activity->content !!}
+                        </div>
+                        @else
+                        <div
+                        style="background: #f8f0f5; border-radius: 12px; padding: 1.5rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
+                            {!! $activity->content !!}
+                        </div>
+                        @endif
+                    @endforeach
+
+                    @if($activityInfo->isEmpty())
                     <div
                         style="background: #fff3e6; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05);">
                         <h3 style="color: #a35b4b;">🎉 活動一、慶開幕來店消費即贈200元抵用券！</h3>
@@ -501,6 +487,7 @@
                             <li>數量有限，送完為止！</li>
                         </ul>
                     </div>
+                    @endif
                 </div>
 
             </div>
@@ -518,39 +505,49 @@
             </div>
             <div class="row justify-content-center align mb-5">
 
-                <div class="col-lg-10 mb-4">
+                <div class="col-lg-5 mb-3">
+                    <h3 class="text-center mb-3" style="margin-top:2rems;">🔗 追蹤我們</h3>
+
+                    <div class="d-flex justify-content-center mb-3">
+
+                        <a href="https://www.facebook.com/profile.php?id=61573227655212">
+                            <span class="mx-2 social-icon"><i class="fa-brands fa-facebook"></i></span>
+                        </a>
+
+                        <a href="https://www.instagram.com/yueyuewash/">
+                            <span class="mx-2 social-icon"><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+
+                        <a href="https://www.tiktok.com/@user78275772884583">
+                            <span class="mx-2 social-icon"><i class="fa-brands fa-tiktok"></i></span>
+                        </a>
+
+                    </div>
+
+                    <div class="mb-3 mx-lg-5 mx-3 text-center">
+                        <p>
+                            <span><i class="fa-solid fa-clock"></i></span>
+                            <strong>營業時間：</strong><br>
+                            週二至週日 11:00 ~ 翌日 01:00<br>（最後收客時間 00:00）<br>每週一公休</p>
+                        <p>
+                            <span><i class="fa-solid fa-phone"></i></span>
+                            <strong>來電電話：</strong><br>
+                            <a href="tel:0980015158">0980015158</a> / <a href="tel:0976521762">0976521762</a>
+                        </p>
+                        <p>
+                            <a class="cta-button mx-auto" href="https://lin.ee/r01jIIf" target="_blank">💬 點我 LINE 線上預約</a>
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-7 mb-4">
                     <div style="margin-bottom: 1rem;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0538908958415!2d120.19865069999999!3d22.9850457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e77003c71af53%3A0x141600dea3340b5c!2z546l546lIOi2iuW8j-mkiueUn-a0l-mrrg!5e0!3m2!1szh-TW!2stw!4v1744394702691!5m2!1szh-TW!2stw"
-                            style="width:100%; height:300px; border:0; border-radius:12px;" loading="lazy"></iframe>
+                            style="width:100%; height:23rem; border:0; border-radius:12px;" loading="lazy"></iframe>
                     </div>
                 </div>
-
-                <div class="col-lg-5 mb-3">
-                    <h3 style="margin-top:2rems;">🔗 追蹤我們</h3>
-                    <ul style="list-style: none; padding-left: 0; line-height: 2;">
-                        <li><span><i class="fa-brands fa-facebook"></i></span> Facebook：<a
-                                href="https://www.facebook.com/profile.php?id=61573227655212" target="_blank"
-                                class="text-995a3b">前往粉絲專頁</a></li>
-                        <li><span><i class="fa-brands fa-instagram"></i></span> Instagram：<a
-                                href="https://www.instagram.com/yueyuewash/" target="_blank" class="text-995a3b">追蹤我們</a>
-                        </li>
-                        <li><span><i class="fa-brands fa-tiktok"></i></span> TikTok：<a
-                                href="https://www.tiktok.com/@user78275772884583" target="_blank"
-                                class="text-995a3b">看看短影音</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-5 mb-3">
-                    <p><strong>聯絡地址：</strong>700 台南市中西區南寧街 73 號</p>
-                    <p><strong>營業時間：</strong>週二至週日 11:00 ~ 翌日 01:00（最後收客時間 00:00）<br>每週一公休</p>
-                    <p><strong>來電電話：</strong>
-                        <a href="tel:0980015158">0980015158</a> / <a href="tel:0976521762">0976521762</a>
-                    </p>
-                    <p>
-                        <a class="cta-button" href="https://lin.ee/r01jIIf" target="_blank">💬 點我 LINE 線上預約</a>
-                    </p>
-                </div>
-
 
             </div>
         </div>
