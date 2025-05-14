@@ -276,7 +276,7 @@ p {
     width: 100%;
     height: 20rem;
     object-fit: cover;
-    object-position: center;
+    object-position: center 30%;
 }
 
 .bg-f2-e5 {
@@ -406,10 +406,32 @@ p {
     .cta-button:hover {
         background-color: #e69138 !important;
     }
-    .cta-button a {
+    .cta-button {
         color: #fff;
         text-decoration: none;
     }
-    .cta-button a:hover {
+    .cta-button:hover {
         color: #fff;
     }
+
+    .event * {
+        word-wrap: break-word;
+    }
+
+    .w-fit {
+        width: fit-content;
+    }
+
+    .price .nav-link {
+        color: #995a3b !important;
+        background-color: transparent !important;
+        border: 1px solid #995a3b !important;
+        border-radius: 0 !important;
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+      }
+      .price .nav-link.active, .price .show>.nav-link, .price .nav-link:hover, .price .nav-link:focus, .price .nav-link:active {
+        color: #fff !important;
+        background-color: #995a3b !important;
+        border: 1px solid #995a3b !important;
+      }
