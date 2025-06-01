@@ -175,7 +175,7 @@
                         @foreach ($teamsInfo ?? [] as $team)
                             <div class="d-block block-testimony mx-auto text-center">
                                 <div class="person w-50 mx-auto mb-4">
-                                    <img src="{{ env('APP_URL', 'https://yueyuewash.powerchi.com.tw') . '/uploads/' . $team->image }}"
+                                    <img src="{{ env('APP_URL', 'https://yueyuewash.com') . '/uploads/' . $team->image }}"
                                         alt="Image" class="img-fluid rounded-circle mx-auto">
                                 </div>
                                 <div>
@@ -426,7 +426,7 @@
                                             <div class="col-lg-3 col-6 text-center">
                                                 <img src="{{ asset('assets/images/icon/icon02.png') }}" class="img-fluid w-75"
                                                     alt="">
-                                                <h6>全身按摩</h6>
+                                                <h6>肩頸按摩</h6>
                                             </div>
                                             <div class="col-lg-3 col-6 text-center">
                                                 <img src="{{ asset('assets/images/icon/icon03.png') }}" class="img-fluid w-75"
@@ -682,7 +682,7 @@
                             <a class="text-995a3b" href="tel:0980015158">0980015158</a> / <a class="text-995a3b" href="tel:0976521762">0976521762</a>
                         </p>
                         <p>
-                            <a class="cta-button mx-auto" style="background-color: #00B900 !important;" href="https://lin.ee/r01jIIf" target="_blank">💬 點我 LINE
+                            <a class="cta-button mx-auto" style="background-color: #00B900 !important;" href="https://lin.ee/FtYy2eM" target="_blank">💬 點我 LINE
                                 線上預約</a>
                         </p>
                     </div>

@@ -20,6 +20,9 @@
     <link rel="canonical" href="{{ url()->full() }}" />
     <meta name="google-site-verification" content="" />
 
+    <link rel="shortcut icon" href="{{ asset('assets/images/LOGO/玥玥LOGO.png') }}" type="image/x-icon">
+    <link rel="apple-touch-icon" href="{{ asset('assets/images/LOGO/玥玥LOGO.png') }}" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,700" rel="stylesheet">
 
     <link rel="stylesheet" href="{{ asset('assets/fonts/icomoon/style.css') }}">
@@ -67,6 +70,14 @@
 
         @include('layouts_main.footer')
 
+    </div>
+
+    <div class="social-links-btn">
+        <a href="https://lin.ee/FtYy2eM" target="_blank"
+            class="d-block"><img src="{{ asset('assets/images/left_line.png') }}"
+                class="img-fluid left-line-img" alt=""></a>
+        <a href="https://www.facebook.com/profile.php?id=61573227655212" class="d-block" target="_blank"><img
+                src="{{ asset('assets/images/left_mes.png') }}" class="img-fluid left-msg-img" alt=""></a>
     </div>
 
     <script src="{{ asset('assets/js/jquery-3.3.1.min.js') }}"></script>

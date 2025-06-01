@@ -13,8 +13,12 @@
         <div class="row align-items-center">
 
             <div class="col-11 col-xl-4">
-                <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">玥玥越式養生洗髮<span
-                            class="text-primary">.</span> </a></h1>
+                <h1 class="mb-0 site-logo">
+                    <a href="index.html" class="text-white mb-0">
+                        <img src="{{ asset('assets/images/LOGO/logo.png') }}" alt="logo" class="img-fluid">
+                        {{-- 玥玥越式養生洗髮<span class="text-primary">.</span> --}}
+                    </a>
+                </h1>
             </div>
             <div class="col-12 col-md-8 d-none d-xl-block">
                 <nav class="site-navigation position-relative text-right" role="navigation">

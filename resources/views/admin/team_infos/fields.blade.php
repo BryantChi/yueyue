@@ -20,7 +20,7 @@
     <div class="img-preview-cover mt-2">
         @if ($teamInfo->image ?? null)
             <p for="">預覽</p>
-            <img src="{{ env('APP_URL', 'https://yueyuewash.powerchi.com.tw') . '/uploads/' . $teamInfo->image }}"
+            <img src="{{ env('APP_URL', 'https://yueyuewash.com') . '/uploads/' . $teamInfo->image }}"
                 style="max-width: 200px; max-height: 200px;">
         @endif
     </div>
